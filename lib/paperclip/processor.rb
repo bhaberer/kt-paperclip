@@ -37,7 +37,7 @@ module Paperclip
     # See Paperclip.run for the available options.
     def convert(arguments = "", local_options = {})
       Paperclip.run(
-        Paperclip.options[:is_windows] ? "magick convert" : "convert",
+        Paperclip.options[:is_windows] ? "magick convert" : "magick",
         arguments,
         local_options
       )
